@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Calculadora</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/calculo.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<h2>Calculadora</h2>
+			<form class="row">
+				
+				<div class="col-12 coll-sm-3 form-group">
+					<input type="number" class="form-control" placeholder="Numero1" id="num1" name="num1" />
+				</div>
+				
+				<div class="col-12 form-group">
+					<select id="operacao" name="operacao" class="form-control">
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+					</select>
+						
+				</div>
+				
+				
+				<div class="col-12 form-group">
+					<input type="number" class="form-control" placeholder="Numero2" id="num2" name="num2" />
+				</div>
+				
+		
+				<div class="col-12 form-group">
+					<button type="button" class="btn btn-primary btn-block" onclick="calcular();"> = </button>
+				</div>
+				
+				<div class="col-12 form-group">
+					<input type="number" class="form-control" placeholder="Resultado" id="resultado" name="resultado" readonly/>
+				</div>
+				
+			</form>
+		</div>
+	</body>
+
+</html>
